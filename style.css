@@ -1,0 +1,367 @@
+:root {
+  --container-color: rgb(138, 43, 226);
+  --item-color: rgb(239, 216, 186);
+  --text-color: rgb(0, 0, 0);
+  --hover-color: rgb(164, 107, 107);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  background-color: #0f172a !important;
+  margin-top: 8rem;
+  color: #e2e8f0 !important;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+.containers {
+  width: 70%;
+  margin: 0 auto;
+}
+.header {
+  position: fixed;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 10rem;
+  height: 100vh;
+}
+.header-fix {
+  width: 40%;
+  height: 100vh;
+}
+.main {
+  width: 60%;
+  padding-left: 4rem;
+}
+.flex-container {
+  display: flex;
+  padding-top: 10rem;
+}
+#name-text {
+  font-size: 4.8rem;
+}
+.title-text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+}
+.description-text {
+  font-size: 1.8rem;
+  color: rgb(148, 163, 184);
+  margin: 0px !important;
+}
+.main-text {
+  font-size: 1.8rem;
+  color: rgb(148, 163, 184);
+  margin-bottom: 14rem;
+}
+.link-item {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  color: rgb(148, 163, 184);
+  letter-spacing: 2px;
+}
+.link-line {
+  height: 1px;
+  width: 3rem;
+  background-color: rgb(148, 163, 184);
+
+  transition: width 0.1s linear;
+}
+.link-flex {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.link-flex:hover {
+  .link-line {
+    width: 6rem;
+    height: 2px;
+    background-color: white;
+  }
+  .link-item {
+    color: white;
+  }
+}
+.experience-card {
+  display: flex;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: #162032;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.205),
+    0 6px 20px 0 rgba(0, 0, 0, 0.021);
+}
+.experience-date-container {
+  width: 25%;
+}
+.experience-content-container {
+  width: 75%;
+}
+.experience-content-text {
+  font-size: 1.6rem;
+  color: rgb(148, 163, 184);
+  margin-bottom: 2rem;
+}
+.experience-date-text {
+  font-size: 1.4rem;
+  color: rgb(148, 163, 184, 0.6);
+  position: absolute;
+  top: 2rem;
+}
+.skill-tag {
+  padding: 0.5rem 1.2rem;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  background-color: #183340;
+  text-align: center;
+  color: white;
+}
+.project-card {
+  display: flex;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  background-color: #162032;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+.project-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.548),
+    0 6px 20px 0 rgba(0, 0, 0, 0.322);
+  background-color: #1a273d;
+}
+.project-image-area {
+  width: 25%;
+}
+.project-description-area {
+  width: 75%;
+}
+.project-image {
+  width: 90%;
+  border: 5px solid #122b39;
+  border-radius: 3px;
+}
+.link {
+  text-decoration: none !important;
+}
+.contact-links {
+  position: fixed;
+  bottom: 3rem;
+}
+.contact-link {
+  text-decoration: none;
+  color: rgb(148, 163, 184);
+  font-size: 4rem;
+  margin-right: 1rem;
+  transition: all 0.2s;
+}
+.contact-link:hover {
+  text-decoration: none;
+
+  color: white;
+  transform: translate(0px, -5px);
+}
+.tags-area{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+}
+
+.link-line-hover {
+  width: 6rem;
+  height: 2px;
+  background-color: white;
+}
+.link-item-hover {
+  color: white;
+}
+.section-list-buttons {
+  margin: 0 !important;
+}
+.section-header-text{
+    font-size: 2rem;
+    margin-bottom:2rem;
+}
+
+
+
+ @media only screen and (max-width: 900px) {
+  .section-header-text{
+    font-size: 1.8rem;
+    margin-bottom:2rem;
+    margin-top: 5rem;
+}
+#name-text {
+    font-size: 3.4rem;
+  }
+  .containers {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section-list-buttons {
+    display: none;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    
+  }
+  .header-fix {
+    width: 100%;
+    height: 30rem;
+
+  }
+  .contact-links{
+    position: relative;
+    bottom: 8rem;
+  }
+  .main {
+    width: 100%;
+    padding: 0px;
+  }
+  .title-text{
+    margin-bottom: 0px;
+  }
+  .experience-card {
+    flex-direction: column;
+  }
+  .experience-date-container {
+    width: 100%;
+  }
+  .experience-content-container {
+    width: 100%;
+  }
+  .experience-date-text {
+    font-size: 1.4rem;
+    color: rgb(148, 163, 184, 0.6);
+    position: relative;
+    top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .tags-area{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+  }
+  .skill-tag{
+    margin: 0px;
+  }
+  .project-card {
+    display: flex;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    background-color: #162032;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    flex-direction: column-reverse;
+  }
+  .project-image-area {
+  width: 40%;
+  margin-top: 1rem;
+}
+.project-description-area {
+  width: 100%;
+}
+} 
+
+@media only screen and (min-width: 901px) {
+   
+  .containers {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #name-text {
+    font-size: 4rem;
+  }
+  .title-text {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0px;
+  }
+  .header {
+    position: fixed;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10rem;
+    height: 100vh;
+  }
+  .header-fix {
+    width: 50%;
+    height: 100vh;
+  }
+  .main {
+    width: 50%;
+    padding-left: 4rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  .containers {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #name-text {
+    font-size: 4.8rem;
+  }
+  .title-text {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+  }
+  .header {
+    position: fixed;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 10rem;
+    height: 100vh;
+  }
+  .header-fix {
+    width: 50%;
+    height: 100vh;
+  }
+  .main {
+    width: 50%;
+    padding-left: 4rem;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .containers {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #name-text {
+    font-size: 4.8rem;
+  }
+}
